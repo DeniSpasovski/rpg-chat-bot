@@ -2,6 +2,22 @@
   "name": "rpg-chat-bot",
   "version": "1.0.0",
   "description": "RPG chat bot is a role playing game which uses Microsoft bot framework as a platform through which the users can play a Dungeons and Dragons role playing game. The goal of the game is to get to the castle located in the center of the map and kill the evil Prince. That bot is in the role of a game master, and he guides the players on their journey. ",
+  "author": "Deni Spasovski",
+  "license": "ISC",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeniSpasovski/rpg-chat-bot"
+  },
+  "keywords": [
+    "microsoft",
+    "bot",
+    "framework",
+    "chat-bot"
+  ],
   "dependencies": {
     "botbuilder": "^3.7.0",
     "restify": "^4.3.0",
