@@ -1,0 +1,2 @@
+[config]
+command = deploymentscript\deploy.cmd

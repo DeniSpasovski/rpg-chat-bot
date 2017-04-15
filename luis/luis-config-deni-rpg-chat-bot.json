@@ -1,0 +1,340 @@
+{
+  "luis_schema_version": "2.0.0",
+  "versionId": "0.1",
+  "name": "deni-rpg-chat-bot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "action.attack"
+    },
+    {
+      "name": "action.greet"
+    },
+    {
+      "name": "action.run"
+    },
+    {
+      "name": "action.standground"
+    },
+    {
+      "name": "action.travel"
+    },
+    {
+      "name": "help"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "east"
+    },
+    {
+      "name": "north"
+    },
+    {
+      "name": "south"
+    },
+    {
+      "name": "west"
+    }
+  ],
+  "composites": [
+    {
+      "name": "direction",
+      "children": [
+        "north",
+        "south",
+        "west",
+        "east"
+      ]
+    }
+  ],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "i have no idea",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i'm scared",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i don't know what to do",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "what should we do",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i don ' t know",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "attack",
+      "intent": "action.attack",
+      "entities": []
+    },
+    {
+      "text": "i think we should attack",
+      "intent": "action.attack",
+      "entities": []
+    },
+    {
+      "text": "i want to attack the",
+      "intent": "action.attack",
+      "entities": []
+    },
+    {
+      "text": "fight",
+      "intent": "action.attack",
+      "entities": []
+    },
+    {
+      "text": "i'm running",
+      "intent": "action.run",
+      "entities": []
+    },
+    {
+      "text": "we are running",
+      "intent": "action.run",
+      "entities": []
+    },
+    {
+      "text": "i want to escape",
+      "intent": "action.run",
+      "entities": []
+    },
+    {
+      "text": "i'm running away",
+      "intent": "action.run",
+      "entities": []
+    },
+    {
+      "text": "we should escape",
+      "intent": "action.run",
+      "entities": []
+    },
+    {
+      "text": "we should run",
+      "intent": "action.run",
+      "entities": []
+    },
+    {
+      "text": "we shouldn't fight, we should run",
+      "intent": "action.run",
+      "entities": []
+    },
+    {
+      "text": "don't move",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "stay here",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "i'm staying here",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "i don't think we should go",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "i'm not moving",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "we are staying",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "we shouldn't fight, we should hide",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "we shouldn't fight, we should stay",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "we shouldn't fight, we should stand",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "stand still",
+      "intent": "action.standground",
+      "entities": []
+    },
+    {
+      "text": "travel north",
+      "intent": "action.travel",
+      "entities": [
+        {
+          "entity": "direction",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "travel east",
+      "intent": "action.travel",
+      "entities": [
+        {
+          "entity": "direction",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "travel west",
+      "intent": "action.travel",
+      "entities": [
+        {
+          "entity": "direction",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "travel south",
+      "intent": "action.travel",
+      "entities": [
+        {
+          "entity": "direction",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "move east",
+      "intent": "action.travel",
+      "entities": [
+        {
+          "entity": "direction",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "move south",
+      "intent": "action.travel",
+      "entities": [
+        {
+          "entity": "direction",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "move north",
+      "intent": "action.travel",
+      "entities": [
+        {
+          "entity": "direction",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "move west",
+      "intent": "action.travel",
+      "entities": [
+        {
+          "entity": "direction",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "say hello",
+      "intent": "action.greet",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "action.greet",
+      "entities": []
+    },
+    {
+      "text": "say hi to the",
+      "intent": "action.greet",
+      "entities": []
+    },
+    {
+      "text": "greet the prince",
+      "intent": "action.greet",
+      "entities": []
+    },
+    {
+      "text": "greet the person",
+      "intent": "action.greet",
+      "entities": []
+    },
+    {
+      "text": "greet the animal",
+      "intent": "action.greet",
+      "entities": []
+    },
+    {
+      "text": "greet the villager",
+      "intent": "action.greet",
+      "entities": []
+    },
+    {
+      "text": "what should i do now",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "what should we do now",
+      "intent": "help",
+      "entities": []
+    },
+    {
+      "text": "help i don't know what to do",
+      "intent": "help",
+      "entities": []
+    }
+  ]
+}
